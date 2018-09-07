@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,400,400i,700');
+
+body {
+    background-color: #ccc;
+}
+
+.backToPortfolio {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1100;
+    background-color: #FFF;
+    padding: 5px 10px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+#subscribeOverlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#subscribeForm {
+    display: none;
+    background-color: white;
+    padding: 20px;
+    font-size: 2em;
+}
+
+#subscribeForm * {
+    margin: 5px 0;
+}
+
+container {
+    display: flex;
+    flex-direction: column;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h5, p {
+    font-family: 'Lato', sans-serif;
+}
+
+.banner {
+    height: 600px;
+    background-image: url("../img/banner.jpg");
+    background-size: cover;
+}
+
+.banner-services{
+    background-image: url("../img/matheus-ferrero-165740.jpg");
+}
+
+.banner-about {
+    background-image: url("../img/woman-1209590_1920.jpg");
+}
+
+header {
+    z-index: 10;
+    height: 90px;
+    background: -webkit-linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.1));
+    display: flex;
+    justify-content: space-between;
+}
+
+header #logo {
+    height: 150px;
+    width: 150px;
+    margin-left: 60px;
+}
+
+header nav {
+    margin-right: 30px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+nav ul > li > a {
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+    padding: 60px 20px 10px 20px;
+    display: block;
+    white-space: nowrap;
+}
+
+nav ul > li > a:hover {
+    color: #afa172;
+    background: rgba(0,0,0,0.5);
+}
+
+header #navIcon {
+    display: none;
+}
+
+#navMobile {
+    display: none;
+    flex-flow: column nowrap;
+    align-items: flex-end;
+    background-color: rgba(50,50,50,0.8);
+    z-index: 1000;
+    position: absolute;
+    width: 100%;
+}
+
+#navMobile ul li {
+    list-style: none;
+    width: 100vw;
+}
+
+#navMobile ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-align: right;
+    padding: 10px 20px;
+    border-bottom: solid 1px #777;
+}
+
+#navMobile ul li a:hover {
+    color: #fff;
+    background-color: #afa172;
+}
+
+#navMobile ul li input {
+    width: 100%;
+}
+
+/* end of header */
+
+.banner #caption {
+    background-color: rgba(175,161,114,0.85);
+    color: #000;
+    position: relative;
+    left: 60px;
+    top: 120px;
+    width: 410px;
+    height: 250px;
+    text-transform: uppercase;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    box-shadow: 0 0 1px #888;
+}
+
+.banner #caption * {
+    margin: 10px;
+}
+
+#caption h3 {
+    font-size: 2em;
+    font-weight: 400;
+}
+#caption h1 {
+    font-size: 6em;
+    font-weight: 400;
+    line-height: 1em;
+}
+
+#caption button {
+    align-self: flex-start;
+    border: solid 1px #000;
+    border-radius: 5px;
+    box-shadow: inset 0 0 2px 0 #000;
+    text-decoration: none;
+    color: #000;
+    background-color: #afa172;
+}
+
+#caption button:hover {
+    color: #afa172;
+    background-color: #000;
+}
+/* end of banner */
+
+.chapters {
+    background-color: white;
+    padding: 20px 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1;
+    grid-gap: 20px;
+    align-items: flex-end;
+}
+
+.chapters-text {
+    grid-column: 1 / span 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.chapters:nth-child(2n){
+    color: white;
+    background-color: rgba(0,0,0,0.8);
+    box-shadow: 0 0 1px 0 #AAA;
+}
+
+.chapters:nth-child(2n) a {
+    color: #afa172;
+}
+
+.chapters:nth-child(2n) .chapters-text {
+    grid-column: 2 / span 2;
+}
+
+.chapters h1 {
+    font-size: 2em;
+    margin-left: -0.5em;
+}
+
+.chapters h2 {
+    font-size: 1.6em;
+    font-style: italic;
+/*    margin-left: 1em;*/
+}
+
+.chapters p {
+    font-weight: 400;
+    font-size: 1.4em;
+/*    margin-left: 1em;*/
+}
+
+.chapters * {
+    margin-bottom: 10px;
+}
+
+.chapters img {
+    object-size: cover;
+    width:  100%;
+}
+
+#services {
+    grid-template-rows: 4em 1fr;
+}
+
+#services .cards {
+    justify-content: center;
+    grid-column: 1 / span 3;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cards article {
+    position: relative;
+    width: 250px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+article a {
+    text-decoration: none;
+    margin: 0;
+}
+
+.article-img {
+    margin-bottom: 0;
+    box-shadow: 0 0 1px #777;
+    transition: all 1s ease;
+}
+
+.article-img:hover {
+    transform: rotateY(180deg);
+}
+
+.article-title {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    bottom: 14px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #afa172;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.article-title h1 {
+    margin: 0;
+}
+
+footer {
+    color: white;
+    background-color: #000;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer * {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5em;
+}
+
+footer .contact {
+    margin-left: -150px;
+}
+
+footer a {
+    color: white;
+}
+
+footer h5 {
+    font-weight: 100;
+    font-size: 1.2em;
+}
+
+footer #smIcons img{
+    height: 15px;
+}

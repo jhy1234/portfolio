@@ -1,0 +1,28 @@
+@media (max-width: 1000px) {
+    section {
+        grid-template-columns: 160px auto;
+    }
+    .banner h1 {
+        width: 100vw;
+    }
+    
+}
+
+@media (max-width: 600px) {
+    .banner h1 {
+        width: 100vw;
+        height: calc(100% - 125px);
+    }
+    section {
+        display:flex;
+        flex-direction: column;
+    }
+    .sideNavs {
+        display: none;
+    }
+    .mobileNav {
+        display: flex;
+    }
+    
+    
+}

@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+body{
+    font-family: 'Lato', sans-serif;
+    background-color: #ccc;
+}
+
+.backToPortfolio {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1100;
+    background-color: #FFF;
+    padding: 5px 10px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size: 2.25em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0;
+    background-color: white;
+    box-shadow: 0 0 2px grey;
+}
+
+.fixed-top {
+    height: 120px;
+    max-width: 1200px;
+    /* box-shadow: 0 0 5px #343a40; */
+    background-color: white;
+}
+
+#wordmark {
+    color: white;
+    background-color: #a61920;
+}
+
+#wordmark h1 {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    text-align: right;
+    line-height: 1em;
+}
+
+#slogan {
+    color: #a61920;
+}
+
+#slogan h2 {
+    position: absolute;
+    bottom: -3px;
+    left: 10px;
+}
+
+#sm-icons {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 10px;
+    width: 180px;
+}
+
+.smIcons {
+    width: 25px;
+    margin: 0 5px;
+}
+
+nav {
+    margin-top: 120px;
+    background-color: #343a40;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    font-size: 1.2em;
+    padding: 5px 20px;
+    display: block;
+    color: white;
+}
+
+.nav-item {
+    border-radius: 15px;
+    display: block;
+}
+
+.nav-item:hover {
+    color: #a61920;
+}
+
+.navbar .navbar-nav .nav-item input {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    border-radius: 10px;
+}
+
+.carousel-item {
+    width: 1200px;
+    height: 600px;
+}
+
+.banner-image {
+    position: relative;
+    top: 120px;
+    box-shadow: 0 1px 1px -1px #a61920;
+}
+
+.banner figcaption {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 0 5px;
+    background-color: rgba(255,255,255, 0.5);
+    border-radius: 3px;
+    box-shadow: 0 0 1px black;
+}
+
+section {
+    position: relative;
+    display: table;
+    margin-top: 120px;
+}
+
+section > div {
+    padding-top: 50px;
+}
+
+section .flex-sm-column {
+    margin-left: 15px;
+    padding-top: 30px;
+    padding-right: 0;
+    color: white;
+}
+
+section .flex-sm-column a {
+    color: white;
+    padding-left: 20px;
+}
+
+section .flex-sm-column a:hover {
+    background-color: #a61920;
+    box-shadow: inset 0 1px 1px -1px #000;
+}
+
+section .flex-sm-column .active {
+    background-color: #a61920;
+}
+
+section h1 {
+    margin-bottom: 30px;
+}
+
+section h4 {
+    margin-left: 20px;
+}
+
+section p {
+    padding-left: 40px;
+}
+
+#article img {
+    border: solid 1px grey;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px -1px grey;
+    padding-right: 5px;
+    margin-left: -30px;
+}
+
+footer {
+    color: white;
+    background-color: #a61920;
+    padding-top: 6px;
+    box-shadow: 0 0 1px grey;
+}
+
+footer h5 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1em;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    border-top: solid 1px #CCC;
+    padding: 20px 0;
+}
+
+#members .profile:last-child {
+    border-bottom: solid 1px #CCC;
+}
+
+.profile img {
+    height: 200px;
+}
+
+.profile p {
+    padding: 10px;
+}
+
+form h4 {
+    margin: 20px 0 10px 0;
+}
+
+form .col-form-label {
+    margin-left: 0.8em;
+}
+
+form button {
+    float: right;
+    margin: 40px;
+}
+
+@media print {
+  img {
+    display: none !important;
+  }
+
+  * {
+    background-image: none !important;
+  }
+    
+    .carousel, #banner {
+        display:none !important;
+    }
+}

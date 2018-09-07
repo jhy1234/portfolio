@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Huangyi's Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Huangyi Jiang's personal portfolio. Student from BCIT, new media and web development program">
+    
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/reset.min.css" type="text/css">
+    <link rel="stylesheet" href="css/global.min.css" type="text/css">
+    <link rel="stylesheet" href="css/responsive.min.css" type="text/css">
+</head>
+
+<!-- Global Site Tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-124942481-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-124942481-1');
+</script>
+<!-- Hotjar Tracking Code for huangyijiang.com -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:979410,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+<body>
+    <container>
+            <header>
+                    <div id="logo">
+                        <h1><a href="index.html">Huangyi</a></h1>
+                    </div>
+    
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a class="menu-hover" href="#">Projects</a>
+                                <ul class="submenu">
+                                    <li><a class="sub-item" href="web1.html">Web Development 1 Bootstrap</a></li>
+                                    <li><a class="sub-item" href="web2.html">Web Development 2 Flex &amp; Grid</a></li>
+                                    <li><a class="sub-item" href="web3.html">Web Development 3 PHP</a></li>
+                                    <li><a class="sub-item" href="web4.html">Web Development 4 Responsive Layout</a></li>
+                                    <li><a class="sub-item" href="app_ui.html">Web Design</a></li>
+                                    <li><a class="sub-item" href="vfx1.html">Visual Effects - Intro Bumper</a></li>
+                                    <li><a class="sub-item" href="vfx2.html">Visual Effects - MythBuster</a></li>
+                                    <li><a class="sub-item" href="video_production.html">Video Production</a></li>
+                                    <li><a class="sub-item" href="color_correction.html">Color Correction</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="about.html">About</a></li>
+                        </ul>
+                    </nav>
+                    
+                    <div id="navIcon">
+                        <img src="img/icons/menu.svg">
+                    </div>
+                </header>
+                
+                <div id="navMobile">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="web1.html">Web Development 1 Bootstrap</a></li>
+                        <li><a href="web2.html">Web Development 2 Flex &amp; Grid</a></li>
+                        <li><a href="web3.html">Web Development 3 PHP</a></li>
+                        <li><a href="web4.html">Web Development 4 Responsive Layout</a></li>
+                        <li><a href="app_ui.html">Web Design</a></li>
+                        <li><a href="vfx1.html">Visual Effects - Intro Bumper</a></li>
+                        <li><a href="vfx2.html">Visual Effects - MythBuster</a></li>
+                        <li><a href="video_production.html">Video Production</a></li>
+                        <li><a href="color_correction.html">Color Correction</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+
+        <section>
+            <div id="article">
+                <div class="chapters">
+                    <div class="projectIntro">
+                        <h1>Visual Effects 1</h1>
+                        <h3>&rarr; In this project, I will demonstrate my knowledge in After Effects.</h3>
+                        <p>The purpose is to create a short introduction bumper for another <a href="video_production.html" target="_blank">video composition</a>.</p>
+                        <p>The main task is to create an animated cube combining six footages.</p>
+                    </div>
+                </div>
+                
+                <div class="chapters">
+                    <iframe class="chapter-contentExpandFull" width="100%" height="540" src="https://www.youtube.com/embed/WIvGQONlzvU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+                
+                <div class="chapters">
+                    <div class="chapter-contentLeft">
+                        <h3>1. Animated Cube - (a)</h3>
+                        <p>First prepare footages for six sides.</p>
+                        <p><strong>Expression code:</strong> loopOut(type = "cycle", numKeyframes = 0)</p>
+                    </div>
+                    <div class="chapter-contentExpandFull">
+                        <img src="img/vfx1/loop.jpg" alt="visual effects project 1 screenshot" />
+                    </div>
+                </div>
+                
+                <div class="chapters">
+                    <div class="chapter-contentCenter">
+                        <h3>2. Animated Cube - (b)</h3>
+                        <p>The key is to create a null object, and parent all six sides to it.</p>
+                        <p>Take advantage of 2 node camera's <strong>point of interest</strong> and <strong>position</strong> parameters. </p>
+                    </div>
+                    <div class="chapter-contentExpandFull">
+                        <img src="img/vfx1/1.jpg" alt="visual effects project 1 screenshot" />
+                    </div>
+                </div>
+                
+                <div class="chapters">
+                    <div class="chapter-contentRight">
+                        <h3>3. Grid Effect</h3>
+                    </div>
+                    <div class="chapter-contentExpandFull">
+                        <img src="img/vfx1/grid_effect.jpg" alt="grid effect">
+                    </div>
+                </div>
+                
+                <div class="chapters">
+                    <div class="chapter-contentLeft">
+                        <h3>4. Animated Text Mask</h3>
+                    </div>
+                    <div class="chapter-contentExpandFull">
+                        <img src="img/vfx1/animated_text.jpg" alt="animated text" />
+                    </div>
+                </div>
+                
+                <div class="chapters">
+                    <div class="chapter-contentCenter">
+                        <h3>5. Spot Light</h3>
+                        <p>Point of interest and Cone Angle</p>
+                    </div>
+                    <div class="chapter-contentExpandFull">
+                        <img src="img/vfx1/spotlight.jpg" alt="spot light in after effects"/>
+                    </div>
+                </div>
+                
+                <div class="chapters">
+                    <div class="chapter-contentRight">
+                        <h3>6. Audio Editing</h3>
+                        <p>Garage Band &amp; Audition</p>
+                    </div>
+                    <div class="chapter-contentExpandFull">
+                        <img src="img/vfx1/audio.jpg" alt="audio editing">
+                        <img src="img/vfx1/audio2.jpg" alt="audio editing">
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        
+        <footer>
+            <h5>&copy; BCIT MDIA - Huangyi Jiang, June 2018 | Reminder: this site uses <a href="http://www.hotjar.com/‎" target="_blank">Hotjar</a> to track your visits to the site!</h5>
+            <div id="smIcons">
+                <a href="https://www.youtube.com/channel/UCFkuflm-we-6B78MfdGff9g" target="_blank"><img src="img/icons/youtube.svg"></a>
+                <a href="https://www.linkedin.com/in/huangyi-jiang-321a22161" target="_blank"><img src="img/icons/linkedin.svg"></a>
+            </div>
+        </footer>
+    </container>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/script.min.js"></script>
+
+    
+</body>
+
+</html>

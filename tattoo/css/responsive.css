@@ -1,0 +1,57 @@
+@media (max-width: 600px) {
+    header {
+        height: 150px;
+    }
+    
+    header #logo {
+        margin-left: 0;
+    }
+    
+    header nav {
+        display: none;
+    }
+    
+    header #navIcon {
+        grid-column: 2;
+        grid-row: 1 / 3;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 20px;
+    }
+    
+    header #navIcon img {
+        width: 30px;
+    }
+    
+    .banner #caption {
+        left: 0;
+        top: 0;
+        height: 410px;
+        width: 100%;
+    }
+    
+    .chapters {
+        padding: 20px;
+    }
+    
+    .chapters-text, .chapters:nth-child(2n) .chapters-text {
+        grid-column: 1 / span 3;
+    }
+    
+    .chapters img {
+        display: none;
+    }
+    
+    .cards article {
+        width: 100%;
+        height: 60px;
+    }
+    
+    footer {
+        flex-direction: column;
+    }
+    footer .contact {
+        margin: 0;
+    }
+    
+}
